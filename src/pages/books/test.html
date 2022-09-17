@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@800&display=swap');
+        /* @property --rotate {
+            syntax: "<angle>";
+            initial-value: 132deg;
+            inherits: false;
+        } */
+        body{
+            background-color: #212534;
+        }
+
+        /* font-family: 'Bebas Neue',
+        cursive;
+        font-family: 'Roboto Slab',
+        serif; */
+
+        :root {
+            --card-height: 65vh;
+            --card-width: calc(var(--card-height) / 1.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .containerSub {
+            display: flex;
+            width: 20vw;
+            height: 20vw;
+            flex-direction: column;
+            padding: 1em;
+        }
+
+        .containerSub .line{
+            /* height: 0.5px;
+            width: calc(100%-2px);
+            background-color: #212534; */
+            position: relative;
+            margin: 12px 0px;
+            width: calc(100%-2px);
+            transition: width 2s ;
+            display: block;
+        }
+
+        .containerSub .line::before,
+        .containerSub .line::after{
+            position: absolute;
+            display: block;
+            content: "";
+            width: 15%;
+            height: 3px;
+            background-color: #212534;
+            transition: width 2s;
+        }
+
+
+        .containerSub .line::after{
+            left: 50%;
+        }
+
+        .containerSub .line::before{
+           right: 50%;
+        }
+
+        .product-img {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .containerSub:hover .book-detail-item {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .containerSub:hover .line::after{
+            width: 50%;
+        }
+
+        .containerSub:hover .line::before{
+            width: 50%;
+        }
+
+
+        .product-description {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Bebas Neue','cursive';
+        }
+
+        .product-description h2{
+            color: #Dc1d4d;
+        }
+
+        .product-description span{
+            color: #Dc1d4d;
+        }
+
+        .product-description {
+            padding: 2em;
+        }
+
+        .product-description h2 {
+            margin-bottom: 1em;
+        }
+
+        .product-description p {
+            font-size: 20px;
+        }
+
+        .slide_up {}
+
+
+
+        .book-detail-item {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: white;
+            padding: 1vw 1vw;
+            text-align: left;
+            opacity: 0;
+            transition: all .8s;
+            z-index: 90;
+            background-color: rgba(51, 52, 52, 0.8);
+            flex-direction: column;
+        }
+
+        .book-detail-item * {
+            color: white;
+            text-align: center;
+        }
+
+        .slide_right .book-detail-item {
+            transform: translateX(100%);
+        }
+
+        .slide-base {
+            background-color: white;
+            position: relative;
+        }
+
+
+
+        a {
+            color: #212534;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerSub">
+        <div class="slide_right slide-base card">
+            <div class="product-img">
+                <div class="book-detail-item">
+                    <h2>Book Name</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, nobis!...</p>
+                    <div class="btn-group">
+                        <a href="#">Buy Now</a>
+                        <a href="#">View Detail</a>
+                    </div>
+                </div>
+                <img src="./9781632157096.jpg" alt="">
+            </div>
+            <div class="product-description">
+                <div class="line"></div>
+                <h2>Title</h2>
+                <p>Price: <span>$12</span> $0,99</p>
+            </div>
+        </div>
+        <div class="slide_right slide-base card">
+            <div class="product-img">
+                <div class="book-detail-item">
+                    <h2>Book Name</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, nobis!...</p>
+                    <div class="btn-group">
+                        <a href="#">Buy Now</a>
+                        <a href="#">View Detail</a>
+                    </div>
+                </div>
+                <img src="./9781632157096.jpg" alt="">
+            </div>
+            <div class="product-description">
+                <div class="line"></div>
+                <h2>Title</h2>
+                <p>Price: <span>$12</span> $0,99</p>
+            </div>
+        </div>
+        <div class="slide_right slide-base card">
+            <div class="product-img">
+                <div class="book-detail-item">
+                    <h2>Book Name</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, nobis!...</p>
+                    <div class="btn-group">
+                        <a href="#">Buy Now</a>
+                        <a href="#">View Detail</a>
+                    </div>
+                </div>
+                <img src="./9781632157096.jpg" alt="">
+            </div>
+            <div class="product-description">
+                <div class="line"></div>
+                <h2>Title</h2>
+                <p>Price: <span>$12</span> $0,99</p>
+            </div>
+        </div>
+        <div class="slide_right slide-base card">
+            <div class="product-img">
+                <div class="book-detail-item">
+                    <h2>Book Name</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, nobis!...</p>
+                    <div class="btn-group">
+                        <a href="#">Buy Now</a>
+                        <a href="#">View Detail</a>
+                    </div>
+                </div>
+                <img src="./9781632157096.jpg" alt="">
+            </div>
+            <div class="product-description">
+                <div class="line"></div>
+                <h2>Title</h2>
+                <p>Price: <span>$12</span> $0,99</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

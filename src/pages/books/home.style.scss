@@ -1,0 +1,68 @@
+// .neonText-LightPink{
+//     color:#fff;
+//     text-shadow:
+//       0 0 5px #ff63a2,
+//       0 0 10px #ff63a2,
+//       0 0 15px #ff63a2,
+//       0 0 20px #ff63a2,
+//       0 0 25px #ff63a2,
+//       0 0 30px #ff63a2
+//       ;
+//   }
+
+.main-container{
+    padding: 3em 9em 9em 9em;
+    margin: 0 auto;
+    height: auto;
+}
+// BEST SELLER
+.stack-combo{
+    // max-width: 80vw;
+    padding-top: 3em;
+    // margin: 0 auto;
+    height: 100%;
+
+}
+
+.stack-combo h3 {
+    font-size:4em;
+    color: rgb(234, 234, 234);
+    text-shadow:  0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+.lines-on-sides {
+    display: table;
+    text-align: center;
+    white-space: nowrap;
+
+    &:after,
+    &:before {
+        content: "";
+        display: table-cell;
+        height: 1em;
+        width: 50%;
+        background: linear-gradient(
+            transparent 50%,
+            currentColor 50%,
+            currentColor calc(50% + 3px),
+            transparent calc(50% + 3px)
+        );
+        background-clip: padding;
+    }
+
+    &:after {
+        border-left: 2em solid transparent;
+    }
+
+    &:before {
+        border-right: 2em solid transparent;
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Oswald|Open+Sans:400,300);

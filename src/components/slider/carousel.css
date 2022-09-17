@@ -1,0 +1,36 @@
+/* #my-carousel .slick-slide img{
+    display: block;
+    height: 20%;
+    width: 20%;
+}
+/* .slick-slide {
+    width: 200px;
+} */
+/* #my-carousel .slick-list .slick-track .slick-slide{
+    width: 50vw;
+    height: 2vw !important;
+    box-sizing: border-box;
+} */
+
+/* #my-carousel .slick-list .slick-track {
+    width: 50vw;
+    height: 2vw !important;
+    box-sizing: border-box;
+}  */
+
+#my-carousel .slick-slide {
+    height: auto; 
+  }
+
+  #my-carousel  .slick-track {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+
+  .my-Img {
+        display: block;
+        width: 500px;
+        height: 200px;
+  }

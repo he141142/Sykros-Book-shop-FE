@@ -1,0 +1,81 @@
+
+.top-manga{
+    padding: 5em 1em 5em 1em;
+}
+
+// .top-manga .manga-item:nth-child(1){
+//     box-shadow: rgba(250, 0, 0, 0.56) 0px 22px 70px 4px;
+
+// }
+
+.top-manga:nth-child(2){
+    box-shadow: rgba(22, 26, 255, 0.56) 0px 22px 70px 4px;
+
+}
+
+.top-manga .manga-item:nth-child(3){
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+
+}
+
+.manga-item{
+    padding: 4em;
+    position: relative;
+    display: block;
+    width: 100%;
+    // box-shadow: rgba(250, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.manga-item h1{
+    color: white;
+}
+
+
+.img-background{
+    background-size: contain;
+    width: 20vw;
+    height: 13vw;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+.img-container{
+    // position: absolute;
+    // top: -20%;
+    // left: 0;
+    // transform: rotate(-20deg);
+}
+
+.manga-item img{
+    position: absolute;
+    display: block;
+    width: auto;
+    height: 10vw;
+    top: 0%;
+    left: -0%;
+}
+
+.manga-item .like{
+    background: none;
+    border: none;
+}
+
+.manga-item .like .anticon-heart{
+    border: 1px solid #eb2f96;
+    border-radius: 50%;
+    background-color: #eb2f96;
+}
+
+.manga-item .like .anticon-heart{
+    font-size: 2em
+}
+
+.manga-item .line{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: white;
+}

@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@800&display=swap');
+
+.nav-item.dropdown .dropdown-menu.show{
+        color: red;    
+}
+
+.navbar-brand img{
+    width: 10vw;
+    height: auto;
+}
+
+
+.home-header a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.sub-it a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    padding: 0 1em 0 1em;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+
+
+.sub-it:hover a{
+    color: black;
+}
+
+.sub-it a:hover .sub-it {
+    background-color: white;
+}
+
+.sub-it:hover{
+    background-color: white;
+}
+
+.sub-it{
+    display: flex;
+    align-items:  flex-end;
+    justify-content: center;
+    border: 0.5px solid white;
+    background-color: black;
+}
+
+.sub-it:nth-child(1){
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.sub-it:nth-child(2){
+    align-items:flex-end;
+    justify-content: flex-end;
+
+}
+
+.item-custom.nav-item.show.dropdown
+> .dropdown-menu.show{
+position: absolute;
+    left: 0;
+    text-align: center;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+    padding: 0 !important;
+    font-family: "Bebas Neue", cursive;
+  
+}
+
+.item-custom.nav-item.dropdown{
+    display: flex;
+    align-items: center;
+    
+}
+
+.item-custom.nav-item.dropdown>a{
+    margin: 0;
+}
+
+
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Roboto Slab', serif;
